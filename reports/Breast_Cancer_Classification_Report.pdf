@@ -1,0 +1,65 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 3926 >>
+stream
+BT 0.12 0.15 0.19 rg /F1 19 Tf 48 772 Td (Breast Cancer Classification) Tj ET
+BT 0.32 0.39 0.47 rg /F1 8 Tf 48 759 Td (Machine Learning Analysis of the Wisconsin Diagnostic Breast Cancer Dataset) Tj ET
+BT 0.09 0.20 0.30 rg /F1 12 Tf 48 741 Td (1. Project Objective) Tj ET
+BT 0.12 0.15 0.19 rg /F1 9 Tf 48 726 Td (Build and compare binary classifiers that distinguish benign from malignant samples) Tj ET
+BT 0.12 0.15 0.19 rg /F1 9 Tf 48 713 Td (using 30 numeric measurements. The positive class is Malignant \(1\).) Tj ET
+BT 0.09 0.20 0.30 rg /F1 12 Tf 48 695 Td (2. Dataset) Tj ET
+BT 0.12 0.15 0.19 rg /F1 9 Tf 48 680 Td (The WDBC dataset contains 569 samples and 30 numeric features: 357 benign and) Tj ET
+BT 0.12 0.15 0.19 rg /F1 9 Tf 48 667 Td (212 malignant samples. Diagnosis labels are B = 0 \(Benign\) and M = 1 \(Malignant\).) Tj ET
+BT 0.12 0.15 0.19 rg /F1 9 Tf 48 654 Td (The raw file wdbc.data is downloaded separately from the UCI Machine Learning Repository.) Tj ET
+BT 0.09 0.20 0.30 rg /F1 12 Tf 48 636 Td (3. Methodology) Tj ET
+BT 0.12 0.15 0.19 rg /F1 9 Tf 48 621 Td (The identifier is excluded and the data is split 80/20 using stratified sampling) Tj ET
+BT 0.12 0.15 0.19 rg /F1 9 Tf 48 608 Td (with random_state=42. Polynomial Logistic Regression uses degree-2 features) Tj ET
+BT 0.12 0.15 0.19 rg /F1 9 Tf 48 595 Td (followed by standardization. Random Forest uses 300 trees and balanced class weights.) Tj ET
+BT 0.12 0.15 0.19 rg /F1 9 Tf 48 582 Td (Five-fold out-of-fold probabilities on the training set select each model's threshold) Tj ET
+BT 0.12 0.15 0.19 rg /F1 9 Tf 48 569 Td (by maximizing pooled malignant-class F1-score. The chosen threshold is then) Tj ET
+BT 0.12 0.15 0.19 rg /F1 9 Tf 48 556 Td (evaluated on the held-out test set.) Tj ET
+BT 0.09 0.20 0.30 rg /F1 12 Tf 48 538 Td (4. Test Results) Tj ET
+BT 0.12 0.15 0.19 rg /F1 9 Tf 48 523 Td (Polynomial Logistic Regression: threshold 0.40, accuracy 0.9737, precision 0.9756,) Tj ET
+BT 0.12 0.15 0.19 rg /F1 9 Tf 48 510 Td (recall 0.9524, F1-score 0.9639. Confusion matrix: [[71, 1], [2, 40]].) Tj ET
+BT 0.12 0.15 0.19 rg /F1 9 Tf 48 497 Td (Random Forest: threshold 0.36, accuracy 0.9649, precision 0.9750, recall 0.9286,) Tj ET
+BT 0.12 0.15 0.19 rg /F1 9 Tf 48 484 Td (F1-score 0.9512. Confusion matrix: [[71, 1], [3, 39]].) Tj ET
+BT 0.09 0.20 0.30 rg /F1 12 Tf 48 466 Td (5. Interpretation) Tj ET
+BT 0.12 0.15 0.19 rg /F1 9 Tf 48 451 Td (Polynomial coefficients describe the fitted model in transformed and standardized) Tj ET
+BT 0.12 0.15 0.19 rg /F1 9 Tf 48 438 Td (feature space and are not direct effects in the original measurement units.) Tj ET
+BT 0.12 0.15 0.19 rg /F1 9 Tf 48 425 Td (Permutation importance measures the decrease in F1-score after shuffling a feature.) Tj ET
+BT 0.12 0.15 0.19 rg /F1 9 Tf 48 412 Td (It is exploratory on the held-out test set and was not used for model selection.) Tj ET
+BT 0.09 0.20 0.30 rg /F1 12 Tf 48 394 Td (6. Findings and Limitations) Tj ET
+BT 0.12 0.15 0.19 rg /F1 9 Tf 48 379 Td (Polynomial Logistic Regression achieved the strongest result on this test split and) Tj ET
+BT 0.12 0.15 0.19 rg /F1 9 Tf 48 366 Td (missed two malignant samples; Random Forest missed three. Results come from one) Tj ET
+BT 0.12 0.15 0.19 rg /F1 9 Tf 48 353 Td (stratified hold-out split and a small benchmark dataset, and may not generalize to) Tj ET
+BT 0.12 0.15 0.19 rg /F1 9 Tf 48 340 Td (other populations or clinical settings. Further work should use repeated or nested) Tj ET
+BT 0.12 0.15 0.19 rg /F1 9 Tf 48 327 Td (cross-validation, compare calibration methods, and validate on independent data.) Tj ET
+BT 0.12 0.15 0.19 rg /F1 9 Tf 48 314 Td (Threshold choices should reflect the relative costs of false negatives and false positives.) Tj ET
+BT 0.32 0.39 0.47 rg /F1 8 Tf 48 301 Td (Educational project only. This is not a medical diagnostic system and must not be used for medical decisions.) Tj ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000311 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+4289
+%%EOF
