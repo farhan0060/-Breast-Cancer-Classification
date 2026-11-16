@@ -46,6 +46,17 @@ The raw file `wdbc.data` is not included in this repository. Download it from th
 - Polynomial coefficients are measured in the transformed and standardized feature space; they are not direct effects in the original measurement units.
 - Permutation importance is an exploratory analysis on the held-out test set. It is not used for model selection or threshold tuning.
 
+## Visualizations
+
+The notebook includes two model-interpretation plots:
+
+- Polynomial Logistic Regression coefficients in the transformed feature space.
+- Permutation importance measured by the decrease in malignant-class F1-score.
+
+![Polynomial Logistic Regression coefficients](images/logreg_polynomial_coefficients.png)
+
+![Permutation importance](images/permutation_importance.png)
+
 ## Repository Structure
 
 ```text
